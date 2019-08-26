@@ -7,12 +7,18 @@ public class DataFactory : MonoBehaviour
     public GameObject dataPrefab;
     public Transform loadingBar;
 
-    private void Update()
+    private IEnumerator SpawnCoroutine()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        while (true)
         {
             Instantiate(dataPrefab, transform);
             dataPrefab.GetComponent<Data>().loadingBar = loadingBar;
+            yield return new WaitForSeconds(1);
         }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(SpawnCoroutine());
     }
 }
