@@ -14,6 +14,16 @@ public class SoundManager : MonoBehaviour
 
     public StudioEventEmitter eventEmitter;
 
+    public void Fire()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Fire");
+    }
+
+    public void Reload()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Reload");
+    }
+
     private void Update()
     {
         eventEmitter.SetParameter("Intensity", dataFactory.enemyIntensity);
