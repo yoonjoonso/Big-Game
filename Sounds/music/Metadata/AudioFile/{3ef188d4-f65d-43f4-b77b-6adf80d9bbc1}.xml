@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{3ef188d4-f65d-43f4-b77b-6adf80d9bbc1}">
+		<property name="assetPath">
+			<value>popcorn.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>13.347233560090704</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{53398c30-6e85-4a29-b138-e94f709a8452}</destination>
+		</relationship>
+	</object>
+</objects>

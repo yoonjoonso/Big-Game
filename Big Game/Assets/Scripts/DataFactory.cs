@@ -7,6 +7,8 @@ public class DataFactory : MonoBehaviour
     public GameObject dataPrefab;
     public Transform loadingBar;
 
+    public float enemyIntensity; // used for sound
+
     private IEnumerator SpawnCoroutine()
     {
         while (true)
