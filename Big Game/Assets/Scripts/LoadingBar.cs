@@ -20,7 +20,7 @@ public class LoadingBar : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("triggered by: " + other);
+        //print("triggered by: " + other);
         if (other.CompareTag("Data"))
         {
             Destroy(other.gameObject);

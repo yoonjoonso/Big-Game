@@ -34,11 +34,11 @@ public class EnemyMovement : MonoBehaviour
         if (timer >= interval)
         {
             timer = 0f;
-            PlayerInput();
+            GetDirection();
         }
     }
 
-    private void PlayerInput()
+    private void GetDirection()
     {
         Vector2 dist = transform.position - target.position;
 
@@ -115,16 +115,5 @@ public class EnemyMovement : MonoBehaviour
     private void Movement(Vector2 direction)
     {
         transform.Translate(direction);
-        //transform.eulerAngles = new Vector3(0,0,GetAngleFromDir(direction));
     }
-
-    //private float GetAngleFromDir(Vector2 dir)
-    //{
-    //    float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Deg2Rad;
-    //    //if(angle < 0)
-    //    //{
-    //    //    angle += 360;
-    //    //}
-    //    return angle;
-    //}
 }
