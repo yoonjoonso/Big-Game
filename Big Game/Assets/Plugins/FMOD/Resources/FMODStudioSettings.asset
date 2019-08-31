@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: C:/Users/yoonj/Desktop/Example/Big-Game/Sounds/music/music.fspro
-  SourceBankPathUnformatted: C:/Users/yoonj/Desktop/Example/Big-Game/Sounds/music/Build
+  sourceProjectPath: C:/Users/yoon.so/Desktop/Big-Game/Sounds/music/music.fspro
+  SourceBankPathUnformatted: C:/Users/yoon.so/Desktop/Big-Game/Sounds/music/Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
@@ -75,8 +75,7 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master
+  MasterBanks: []
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
