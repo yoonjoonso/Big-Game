@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Direction { None, Down = 1, Left, Right, Up }
+
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -77,39 +77,6 @@ public class EnemyMovement : MonoBehaviour
                 }
             }
         }
-
-        //if (Input.GetKeyDown(KeyCode.W))
-        //{
-        //    if (lastDirection != Direction.Down)
-        //    {
-        //        Movement(Vector2.up);
-        //        lastDirection = Direction.Up;
-        //    }
-        //}
-        //else if (Input.GetKeyDown(KeyCode.A))
-        //{
-        //    if (lastDirection != Direction.Right)
-        //    {
-        //        Movement(Vector2.left);
-        //        lastDirection = Direction.Left;
-        //    }
-        //}
-        //else if (Input.GetKeyDown(KeyCode.S))
-        //{
-        //    if (lastDirection != Direction.Up)
-        //    {
-        //        Movement(Vector2.down);
-        //        lastDirection = Direction.Down;
-        //    }
-        //}
-        //else if (Input.GetKeyDown(KeyCode.D))
-        //{
-        //    if (lastDirection != Direction.Left)
-        //    {
-        //        Movement(Vector2.right);
-        //        lastDirection = Direction.Right;
-        //    }
-        //}
     }
 
     private void Movement(Vector2 direction)
