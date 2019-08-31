@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LoadingBar : MonoBehaviour
 {
-    public float completeAmount;
+    public float completeAmount; // goes from 0 - 1
+    public LoadingText loadingText;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,7 @@ public class LoadingBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        loadingText.UpdateText(completeAmount);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
